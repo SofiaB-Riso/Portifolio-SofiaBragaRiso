@@ -107,7 +107,7 @@ body {
 header {
     position: absolute;
     width: 100%;
-    height: 11vh;
+    height: 13vh;
     display: grid;
     grid-template-columns: 65% 35%;
     grid-template-areas:
@@ -2237,10 +2237,9 @@ textarea:-webkit-autofill {
     header {
         position: absolute;
         width: 100%;
-        height: 13vh;
+        height: 10vh;
         display: grid;
         grid-template-columns: 20% 80%;
-        column-gap: 5%;
         grid-template-areas:
             "pages  more";
         padding: 0 0 3vh;
@@ -2275,22 +2274,24 @@ textarea:-webkit-autofill {
     }
 
     .more {
-        position: relative;
+        position: absolute;
+        left: 0;
+        top: 40%;
+        margin: 0 0 0 5%;
         grid-area: more;
         color: var(--azE);
         height: 80%;
-        width: 95%;
+        width: auto;
         display: grid;
         align-self: end;
-        justify-self: right;
-        grid-template-columns: 65% 35%;
+        grid-template-columns: 210px 32%;
         grid-template-rows: repeat(3, 1fr);
         grid-template-areas:
             "meu len"
             "meu men"
             "meu dark";
-        justify-content: right;
         align-items: end;
+        justify-content: center;
         row-gap: 3vh;
     }
 
@@ -2335,7 +2336,7 @@ textarea:-webkit-autofill {
 
     .e1 {
         border-radius: 40px;
-        width: 90%;
+        width: 190px;
         height: 45px;
         background-color: var(--det);
         border: solid 4px var(--azE);
@@ -2449,10 +2450,13 @@ textarea:-webkit-autofill {
         justify-content: center;
         padding: 8% 0;
         position: absolute;
+        
+        overflow: hidden;
     }
 
     .foto {
         width: 110%;
+        overflow: hidden;
         height: 100%;
         position: absolute;
         background-image: url(vergonha.png);
@@ -2571,7 +2575,7 @@ textarea:-webkit-autofill {
         z-index: 3;
         width: 100%;
         height: 100%;
-        padding: 6% 0 0 0;
+        padding: 0% 0 0 0;
         background-color: var(--azE);
         color: var(--det);
         font-family: var(--pop);
@@ -2580,7 +2584,7 @@ textarea:-webkit-autofill {
         justify-content: center;
         box-shadow: 0px 0px 10px 6px var(--sobE);
         grid-template-rows: 1fr repeat(2, 3fr);
-        grid-template-columns: 85%;
+        grid-template-columns: 90%;
         grid-template-areas:
             "titulo"
             "texto "
@@ -2604,6 +2608,7 @@ textarea:-webkit-autofill {
             align-self: baseline;
             padding-top: 6%;
             width: 100%;
+            margin: auto;
         }
 
         span {
@@ -2833,7 +2838,7 @@ f - Reliência 80%
         margin-top: 2vh;
         padding: 10% 4% 8%;
         grid-area: des;
-        width: 94%;
+        width: 92%;
         height: 57%;
         background-color: var(--det);
         border-radius: 30px 0 0 30px;
@@ -3225,7 +3230,7 @@ f - Reliência 80%
 
     footer {
         background-color: var(--azE);
-        width: 93%;
+        width: 92%;
         height: 30vh;
         padding: 0% 4%;
         display: flex;

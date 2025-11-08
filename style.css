@@ -320,9 +320,11 @@ html {
     width: 45px;
     height: 45px;
 
-    a {
+    button{
         height: 100%;
         width: 100%;
+        background-color: transparent;
+        border: none;
 
         svg {
             fill: var(--azE);
@@ -519,7 +521,7 @@ main {
 .me {
     z-index: 3;
     width: 100%;
-    height: 79.3%;
+    height: 90%;
     padding: 6%;
     background-color: var(--azE);
     color: var(--det);
@@ -1044,11 +1046,12 @@ f - Reliência 80%
 }
 
 .ops {
-    width: 25%;
+    width: 40%;
     height: fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: left;
 
     button {
         font-size: 45px;
@@ -2234,7 +2237,7 @@ textarea:-webkit-autofill {
     header {
         position: absolute;
         width: 100%;
-        height: 10vh;
+        height: 13vh;
         display: grid;
         grid-template-columns: 20% 80%;
         column-gap: 5%;
